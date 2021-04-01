@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Documento HTML </title>
+		<link rel="shortcut icon" href="fotos\logo_html.ico">
+		<link rel="stylesheet" href="css_das_paginas.css">
+		<script>
+			$(".drop")
+			.mouseover(function() {
+			$(".dropdown").show(300);
+			});
+			$(".drop")
+			.mouseleave(function() {
+			$(".dropdown").hide(300);
+			});
+		</script>
+	</head>
+
+	<!--Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla. Ea iusto explicabo quos saepe quae, nobis eaque reiciendis soluta et cupiditate impedit enim tempora, molestias perferendis, obcaecati quibusdam quaerat!
+
+	https://codepen.io/Naymapl/pen/zwdyyX
+
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, aspernatur veniam doloremque quos est voluptate numquam suscipit ut, a architecto dolores omnis repudiandae soluta libero? Itaque accusamus at illo id!-->
+
+	<body>
+	<main>
+		<h1> Bem-Vindo(a) a página sobre HTML ^^ </h1>
+		<nav class="nav">
+			<ul>
+				<li><a href="#h2-1">O conteúdo escrito e sua semântica</a>
+				<li><a href="#h2-2">Listas ordenadas, não ordenadas, mistas e de definição</a>
+				<li><a href="#h2-3">Emojis no site</a>
+				<li><a href="#h2-4">FavIcon</a>
+				<li><a href="#h2-5">Sobre imagens</a>
+				<li><a href="#h2-6">Áudios em HTML</a>
+				<li><a href="#h2-7">Vídeos em HTML</a>
+				<li><a href="#h2-8">Links e Âncoras</a></li>
+			</ul>
+		</nav>
+		<hr>
+		<h2 id="h2-1">O conteúdo escrito e sua semântica</h2>
+		<p>&lt;p&gt; e &lt;/p&gt; faz parágrafo</p>
+		<p>&lt;hr&gt; faz uma linha</p>
+		<p>&lt;br&gt; quebra linha dentro dos parágrafos</p>
+		<p>Use a tag &lt;b&gt;&lt;/b&gt; para deixar uma palavra em <b>negrito</b>, mas esta tag não é semântica, foca apenas na forma</p>
+		<p>Use &lt;strong&gt;&lt;/strong&gt; para deixar em <strong>negrito</strong>, a tag &lt;strong&gt;&lt;/strong&gt; é usada de forma semântica, usada para dar um significado a mais ao texto</p>
+		<p>Use &lt;i&gt;&lt;/i&gt; para deixar um termo em <i>itálico</i>, mas é a forma não semântica, focada apenas na forma</p>
+		<p>Use &lt;em&gt;&lt;/em&gt; para deixar um termo em <em>itálico</em>, a tag &lt;em&gt;&lt;/em&gt; é usada de forma semântica, usada para dar ênfase ao texto</p>
+		<p>Para fazer um <mark>texto marcado</mark>, use &lt;mark&gt;&lt;/mark&gt;</p>
+		<p>Você pode até mudar a cor da marcação, mas é necessário usar CSS (veja o código para ver como é o parâmetro)</p>
+		<p><mark style="background-color: lime">Texto marcado</mark></p>
+		<p>&lt;small&gt;&lt;/small&gt; é uma tag para deixar as letras pequenas, porém é uma tag semântica pois há nos contratos, as famosas "letras miúdas"</p>
+		<p>Podemos marcar um texto como <del>excluído</del> usando &lt;del&gt;&lt;/del&gt;, você pode ler, mas não deve considerá-lo</p>
+		<p>Podemos marcar um texto como <ins>inserido</ins> usando &lt;ins&gt;&lt;/ins&gt;, para dar ênfase à ele</p>
+		<p>Há também a tag &lt;u&gt;&lt;/u&gt; para <u>sublinhar</u>, mas não é semântico, tem foco na forma</p>
+		<p>Para sobrescrever, use &lt;sup&gt;&lt;/sup&gt; (Exemplo: X<sup>4</sup>+3)</p>
+		<p>Para subscrever, use &lt;sub&gt;&lt;/sub&gt; (Exemplo: H<sub>2</sub>O - fórmula da água)</p>
+		<p>A tag &lt;code&gt;&lt;/code&gt; é usada para facilitar a leitura de códigos, pois deixa o texto monoespaçado</p>
+		<p>Exemplo:<code>document.getElementById('teste')</code></p>
+		<p>Porém, a tag &lt;code&gt;&lt;/code&gt; perde sua indetação, por exemplo, se seu código tem uma quebra de linha, a tag &lt;code&gt;&lt;/code&gt; irá ignorar a quebra e colocar tudo na mesma linha</p>
+		<p>Para evitar isso, coloque a tag dentro da tag &lt;pre&gt;&lt;/pre&gt;. Veja os exemplos a seguir:</p>
+		<p>Sem a tag &lt;pre&gt;&lt;/pre&gt;:</p>
+		<code>if(num+1==2){
+			printf("A soma tem resultado 2");
+		}else{
+			printf("A soma tem resultado diferente de 2");
+		}
+	  </code>
+		<p>Com a tag &lt;pre&gt;&lt;/pre&gt;:</p>
+		<pre>
+			<code>
+				if(num+1==2){
+					printf("A soma tem resultado 2");
+				}else{
+					printf("A soma tem resultado diferente de 2");
+				}
+	    </code>
+	  </pre>
+		<p>Citação: <q>Não importa quanto a vida possa ser ruim, sempre existe algo que você pode fazer, e triunfar. Enquanto há vida, há esperança.</q> Stephen Hawking...</p>
+		<p>Use &lt;q&gt;&lt;/q&gt; quando for fazer citações simples</p>
+		<p>Para citações maiores que o normal, use &lt;blockquote&gt;&lt;/blockquote&gt;, essa tag separa a citação, do texto comum, além de ser possível colocar um link para a citação vindo da web</p>
+		<blockquote cite="https://www.lipsum.com/">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</blockquote>
+		<p>Use &lt;abbr&gt;&lt;/abbr&gt; para o visitante da web saber que é uma abreviação</p>
+		<p> <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> </p>
+		<p>Para inverter textos use &lt;bdo&gt;&lt;/bdo&gt;</p>
+		<p><bdo dir="rtl">Teste :) </bdo></p>
+		<hr>
+		<h2 id="h2-2">Listas ordenadas, não ordenadas, mistas e de definição</h2>
+		<p>Para criar listas ordenadas, use &lt;li&gt;&lt;/li&gt; dentro da tag &lt;ol&gt;&lt;/ol&gt;, li=List Item e ol=Ordered List</p>
+		<p>A partir do HTML5, o &lt;/li&gt; se tornou opcional (Veja no código)</p>
+		<p>Lista de compras para o banheiro:</p>
+		<ol>
+			<li>Sabonete
+			<li>Esponja de banho</li>
+			<li>Shampoo
+			<li>Desodorante</li>
+			<li>Escova de Dente
+			<li>Pasta de Dente</li>
+		</ol>
+		<p>Para personalizar a lista, digite dentro da abertura da tag ol, o parâmetro type="", dentro do "" você pode utilizar as formatações 1, A, a, I e i</p>
+		<ol type="1">
+			<li>Desentupidor</li>
+			<li>Alvejante</li>
+		</ol>
+		<ol type="A">
+			<li>Sabonete</li>
+			<li>Esponja de banho</li>
+		</ol>
+		<ol type="a">
+			<li>Shampoo</li>
+			<li>Desodorante</li>
+		</ol>
+		<ol type="I">
+			<li>Escova de Dente</li>
+			<li>Pasta de Dente</li>
+		</ol>
+		<ol type="i">
+			<li>Pente de Cabelo</li>
+			<li>Aromatizante</li>
+		</ol>
+		<p>Para criar listas não ordenadas, use &lt;li&gt;&lt;/li&gt; dentro da tag &lt;ul&gt;&lt;/ul&gt;, ul=Unordered List</p>
+		<p>Para personalizar a lista, digite dentro da abertura da tag ul, o parâmetro type="", dentro do "" você pode utilizar as formatações circle, square e disc</p>
+		<p>Lista de compras para o almoço:</p>
+		<ul type="circle">
+			<li>Alface</li>
+		</ul>
+		<ul type="square">
+			<li>Tomate</li>
+		</ul>
+		<ul type="disc">
+			<li>Peito de Frango</li>
+		</ul>
+		<p>Você pode também misturar tipos de listas ordenadas, usando vários ol dentro de um único ol e mudando seu tipo</p>
+		<ol>
+			<li>Minha frutas preferidas:</li>
+			<ol type="A">
+				<li>Morango</li>
+				<li>Uva</li>
+				<li>Kiwi</li>
+				<li>Banana</li>
+				<li>Lichia</li>
+				<li>Maracujá</li>
+			</ol>
+			<li>Pratos que eu gosto</li>
+			<ol type="I">
+				<li>Lasanha</li>
+				<li>Macarrão Bolonhesa</li>
+				<li>Frango Grelhado</li>
+				<li>Camarão</li>
+			</ol>
+		</ol>
+		<p>Mistura de lista ordenadas e não ordenadas</p>
+		<ol>
+			<li>PlayStation 2:</li>
+			<ul type="disc">
+				<li>Black</li>
+				<li>God of War 2</li>
+				<li>Downhill Mountain Bike</li>
+			</ul>
+			<li>Xbox 360:</li>
+			<ul type="disc">
+				<li>FIFA 19</li>
+				<li>FIFA 20</li>
+				<li>Injustice</li>
+				<li>GTA 5</li>
+			</ul>
+			<li>PlayStation 4</li>
+			<ul type="disc">
+				<li>Uncharted 4</li>
+				<li>God of War 3</li>
+			</ul>
+		</ol>
+		<p>As Listas de Definição são como um dicionário, você tem um termo e logo abaixo há suas definições</p>
+		<p>Use &lt;dl&gt;&lt;/dl&gt; para colocar o &lt;dt&gt;&lt;/dt&gt;=termo e os &lt;dd&gt;&lt;/dd&gt;=a(s) descrição(ões)</p>
+		<dl>
+			<dt>Desenvolver</dt>
+			<dd>Tirar o que envolve ou cobre; desembrulhar.</dd>
+			<dd>Fazer crescer, tornar maior, mais forte.</dd>
+		</dl>
+		<hr>
+		<h2 id="h2-3">Emojis no site</h2>
+		<p>Para usar emojis no site digite "&#x" + "código do emoji no emojipedia"</p>
+		<p>O código do emoji está em "Codepoints"</p>
+		<p>Exemplos: &#x1F60E &#x1F44C &#x1F632 &#x1F440; </p>
+		<hr>
+		<h2 id="h2-4">FavIcon</h2>
+		<p>Para criar um FavIcon você pode usar os sites Icon Archive, Favicon.cc e Favicon.io</p>
+		<p>Para adicionar um FavIcon, use a tag &lt;link rel="shortcut icon" href="Nome do arquivo"&gt; (É recomendado que o tipo de arquivo do ícone seja .ico, que é próprio para isso)</p>
+		<hr>
+		<h2 id="h2-5">Sobre imagens</h2>
+		<h3>Colocando imagens</h3>
+		<p>Dica: Gimp é um programa gratuito usado para conversão e edição de fotos, baixe</p>
+		<p>Nem todas as imagens podem ser utilizadas em seus sites devido ao copyright, atente-se à isso</p>
+		<p>Unsplash e Pexels são ótimos lugares para se encontrar imagens</p>
+		<p>Use a tag &lt;img src="nome do arquivo da imagem" alt="um nome pra explicar a imagem"&gt; para usar uma imagem </p>
+		<img src="fotos\papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
+		<p>Você pode usar imagens quando elas estão em sub-pastas (uma pasta dentro da pasta com o arquivo html)</p>
+		<img src="fotos\papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
+		<p>A imagem é a mesma, mas se você olhar o código, verá que o caminho é diferente</p>
+		<p>Você pode adicionar imagens por link também</p>
+		<img src="https://diagrad.com.br/wp-content/uploads/2017/08/astronauta-640x407.jpg" alt="Imagem de astronauta">
+		<h3>Imagens dinâmicas</h3>
+		<p>Nem todos os clientes estão pelo computador, eles não podem ver imagens muito grandes, pois atrapalha e o seu site fica pesado</p>
+		<p>Para resolver este problema, a tag &lt;picture&gt;&lt;/picture&gt; combinada com as tags &lt;img&gt;&lt;/img&gt; e &lt;source&gt;&lt;/source&gt; fazem com que o site automaticamente selecione imagens menores ou maiores para estes clientes</p>
+		<picture>
+			<source media="(max-width: 700px)" srcset="fotos\pequena.png" type="image/png">
+			<source media="(max-width: 1000px)" srcset="fotos\media.png" type="image/png">
+			<img src="fotos\grande.png" alt="Imagem">
+		</picture>
+		<hr>
+		<h2 id="h2-6">Áudios em HTML</h2>
+		<p>Para áudios, existe a mesma política das imagens, o copyright, sempre tome cuidado com isso, você não quer processado ou algo do tipo né? rs</p>
+		<p>Um lugar que você pode arranjar algumas músicas e efeitos sonoros é o próprio Youtube</p>
+		<p>Abra o Youtube, clique no seu perfil no canto superior direito, clique em "Youtube Studio" e depois "Biblioteca de Áudio"</p>
+		<p>Você também pode pesquisar músicas NCS (No Copyright Songs) no Youtube, porém...</p>
+		<p><q cite="https://pt.wikipedia.org/wiki/NoCopyrightSounds">...para uso comercial das músicas, é necessário contatar a gravadora.</q></p>
+		<p>Para mais informações, acesse o site oficial da NCS clicando <a href="https://ncs.io/" target="_blank" rel="external">aqui</a></p>
+		<p>O comando mais simples é &lt;audio src="Nome do Arquivo"&gt;&lt;/audio&gt;</p>
+		<audio src="audio\mirrormind-bobbyrichards.mp3" controls></audio>
+		<p>Alguns navegadores não possuem compatibilidade com todos os formatos de áudio(MP3 WAV e OGG são 100% compatíveis)</p>
+		<p>*CUIDADO COM OS ÁUDIOS WAV, SÃO MUITO PESADOS E PODEM PREJUDICAR A NAVEGAÇÃO NO SITE*</p>
+		<p>Aqui vai outro jeito de colocar áudios, &lt;audio&gt; &lt;source src="Nome do Arquivo" type="Depende do seu tipo de arquivo, dê uma olhada no MidiaTypes"&lt;/audio&gt;, pode colocar vários sources</p>
+		<audio controls>
+			<source src="audio\mirrormind-bobbyrichards.mp3" type="audio/mp3">
+			<p><b>*Seu navegador não é compatível com os formatos de áudio do site*</b></p>
+		</audio>
+		<p>Parâmetros para a tag audio:</p>
+		<ul>
+			<li>Controls: faz a barra de áudio aparecer, você vai poder selecionar o momento da música e dar play</li>
+			<li>Autoplay: como o próprio nome já diz, toca a música sem clicar nela</li>
+			<li>Loop: quando a música termina, toca denovo, isso infinitamente</li>
+			<li>Preload:</li>
+			<ol type="I">
+				<li>Metadata: mostra algumas informações e só carrega quando você clica</li>
+				<li>Auto: carrega o áudio automaticamente</li>
+				<li>None: só carrega quando você clicar</li>
+			</ol>
+		</ul>
+		<hr>
+		<h2 id="h2-7">Vídeos em HTML</h2>
+		<p>E novamente eu estou aqui avisando, tome cuidado com o Copyright, para ter alguns vídeos sem Copyright, acesse Pexels (atente-se ao tamanho dos vídeos)</p>
+		<p>E também como os áudios, nem todos os formatos de vídeos são compatíveis (os mais utilizados e suportados são MP4/M4V, WEBM e OGV)</p>
+		<p>Dica: HandBrake é um programa gratuito e OpenSource, usado para conversão de vídeos, parecido com o Gimp só que para vídeos</p>
+		<h3>Vídeos hospedados localmente</h3>
+		<p>Os vídeos são iguais, mas são de diferentes formatos, respectivamente, .M4V, .MKV, .WEBM e .OGV</p>
+		<video width="500" controls>
+			<source src="videos\pexels_video_720p30.M4V" type="video/mp4">
+			<source src="videos\pexels_video_720p30.MKV" type="video/mp4">
+			<source src="videos\pexels_video_720p30.WEBM" type="video/webm">
+			<source src="videos\pexels_video_720p30.OGV" type="video/ogg">
+			<p><b>*Seu navegador não é compatível com nenhum dos formatos de vídeo apresentados no site</b></p>
+		</video>
+		<h3>Vídeos hospedados externamente</h3>
+		<p>Pode adicionar vídeos por links também, usarei um exemplo do Youtube</p>
+<pre>
+<code>
+&lt;iframe width="500" height="315" src="URL aqui" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+</code>
+</pre>
+		<p>Clique em um vídeo do Youtube e depois em compartilhar, haverá a opção "Incorporar", o próprio Youtube irá escrever um código para você que adicionará o vídeo ao seu site</p>
+		<p>Ao incorporar vídeos do Youtube no seu site, você não estará utilizando o servidor que seu cliente irá hospedar, e sim, os servidores do Youtube</p>
+		<p>Esse método é muito recomendado, pois diminuirá os custos do seu cliente <br> <b>PS:Aqui também tem copyright</b></p>
+		<p>Por isso é importante que você tenha um canal no Youtube e produza seus vídeos, para ficar livre do Copyright</p>
+		<p>Caso você faça uma site o qual possui conteúdo exclusivo, e você quer que apenas pessoas assinantes do seu site possam visualizá-lo, o <a href="https://Vimeo.com">Vimeo</a> existe pra isso</p>
+		<p>Nele, também há o Copyright, possui uma melhor qualidade de vídeo, porém o seu CODEC é meio lento, então faça um equilíbrio, há uma maior personalização de configurações no código para incorporar </p>
+		<hr>
+		<h2 id="h2-8">Links e Âncoras</h2>
+		<h3>Links externos</h3>
+		<p>Para acessar o Youtube clique <a href="https://youtube.com" target="_blank" rel="external">aqui</a></p>
+		<p>Quando alguém clicar no hiperlink, seu site será sobreposto, então para fazer com que o hiperlink seja aberto em uma nova guia use target="_blank" rel="external" logo após o href=""</p>
+		<h3 id="h2-8-2">Links internos</h3>
+		<p>Existem 2 tipos de links internos</p>
+		<p>Para o primeiro tipo, vamos precisar de um novo arquivo HTML, o qual já está pronto para uso</p>
+		<a href="pagina_html2.html" target="_self" rel="next">Aqui está o segundo documento HTML</a>
+		<p>É o mesmo processo dos links externos, mas ao invés de colocar a URL, coloque o nome do arquivo (cheque o código)</p>
+		<p>O segundo tipo de link interno é por sub-pastas, quando o outro documento está em uma pasta dentro da pasta com o arquivo principal</p>
+		<a href="subpasta\pagina_html3.html">Aqui está o terceiro documento HTML</a>
+		<h3>Links de Download</h3>
+		<p>Para saber o type, vá ao site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Media Types</a></p>
+		<a href="subpasta\pdf.zip" download="pdf.zip" type="application/zip">Clique aqui para baixar o PDF</a>
+		<hr>
+	</main>
+	</body>
+</html>
