@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> Documento HTML </title>
-		<link rel="shortcut icon" href="fotos\logo_html.ico">
+		<link rel="shortcut icon" href="midia/fotos/logo_html.ico">
 		<link rel="stylesheet" href="css_das_paginas.css">
 		<script>
 			$(".drop")
@@ -197,9 +197,9 @@
 		<p>Nem todas as imagens podem ser utilizadas em seus sites devido ao copyright, atente-se à isso</p>
 		<p>Unsplash e Pexels são ótimos lugares para se encontrar imagens</p>
 		<p>Use a tag &lt;img src="nome do arquivo da imagem" alt="um nome pra explicar a imagem"&gt; para usar uma imagem </p>
-		<img src="fotos\papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
+		<img src="midia/fotos/papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
 		<p>Você pode usar imagens quando elas estão em sub-pastas (uma pasta dentro da pasta com o arquivo html)</p>
-		<img src="fotos\papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
+		<img src="midia/fotos/papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
 		<p>A imagem é a mesma, mas se você olhar o código, verá que o caminho é diferente</p>
 		<p>Você pode adicionar imagens por link também</p>
 		<img src="https://diagrad.com.br/wp-content/uploads/2017/08/astronauta-640x407.jpg" alt="Imagem de astronauta">
@@ -207,9 +207,9 @@
 		<p>Nem todos os clientes estão pelo computador, eles não podem ver imagens muito grandes, pois atrapalha e o seu site fica pesado</p>
 		<p>Para resolver este problema, a tag &lt;picture&gt;&lt;/picture&gt; combinada com as tags &lt;img&gt;&lt;/img&gt; e &lt;source&gt;&lt;/source&gt; fazem com que o site automaticamente selecione imagens menores ou maiores para estes clientes</p>
 		<picture>
-			<source media="(max-width: 700px)" srcset="fotos\pequena.png" type="image/png">
-			<source media="(max-width: 1000px)" srcset="fotos\media.png" type="image/png">
-			<img src="fotos\grande.png" alt="Imagem">
+			<source media="(max-width: 700px)" srcset="midia/fotos/pequena.png" type="image/png">
+			<source media="(max-width: 1000px)" srcset="midia/fotos/media.png" type="image/png">
+			<img src="midia/fotos/grande.png" alt="Imagem">
 		</picture>
 		<hr>
 		<h2 id="h2-6">Áudios em HTML</h2>
@@ -220,12 +220,12 @@
 		<p><q cite="https://pt.wikipedia.org/wiki/NoCopyrightSounds">...para uso comercial das músicas, é necessário contatar a gravadora.</q></p>
 		<p>Para mais informações, acesse o site oficial da NCS clicando <a href="https://ncs.io/" target="_blank" rel="external">aqui</a></p>
 		<p>O comando mais simples é &lt;audio src="Nome do Arquivo"&gt;&lt;/audio&gt;</p>
-		<audio src="audio\mirrormind-bobbyrichards.mp3" controls></audio>
+		<audio src="midia/audio/mirrormind-bobbyrichards.mp3" controls></audio>
 		<p>Alguns navegadores não possuem compatibilidade com todos os formatos de áudio(MP3 WAV e OGG são 100% compatíveis)</p>
 		<p>*CUIDADO COM OS ÁUDIOS WAV, SÃO MUITO PESADOS E PODEM PREJUDICAR A NAVEGAÇÃO NO SITE*</p>
 		<p>Aqui vai outro jeito de colocar áudios, &lt;audio&gt; &lt;source src="Nome do Arquivo" type="Depende do seu tipo de arquivo, dê uma olhada no MidiaTypes"&lt;/audio&gt;, pode colocar vários sources</p>
 		<audio controls>
-			<source src="audio\mirrormind-bobbyrichards.mp3" type="audio/mp3">
+			<source src="midia/audio/mirrormind-bobbyrichards.mp3" type="audio/mp3">
 			<p><b>*Seu navegador não é compatível com os formatos de áudio do site*</b></p>
 		</audio>
 		<p>Parâmetros para a tag audio:</p>
@@ -248,10 +248,10 @@
 		<h3>Vídeos hospedados localmente</h3>
 		<p>Os vídeos são iguais, mas são de diferentes formatos, respectivamente, .M4V, .MKV, .WEBM e .OGV</p>
 		<video width="500" controls>
-			<source src="videos\pexels_video_720p30.M4V" type="video/mp4">
-			<source src="videos\pexels_video_720p30.MKV" type="video/mp4">
-			<source src="videos\pexels_video_720p30.WEBM" type="video/webm">
-			<source src="videos\pexels_video_720p30.OGV" type="video/ogg">
+			<source src="midia/video/pexels_video_720p30.M4V" type="video/mp4">
+			<source src="midia/video/pexels_video_720p30.MKV" type="video/mp4">
+			<source src="midia/video/pexels_video_720p30.WEBM" type="video/webm">
+			<source src="midia/video/pexels_video_720p30.OGV" type="video/ogg">
 			<p><b>*Seu navegador não é compatível com nenhum dos formatos de vídeo apresentados no site</b></p>
 		</video>
 		<h3>Vídeos hospedados externamente</h3>
