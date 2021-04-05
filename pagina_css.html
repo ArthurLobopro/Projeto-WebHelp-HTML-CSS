@@ -196,10 +196,32 @@
     <p>Font: é um comando com a propriedade Shorthand, que junta o font-family, font-weight, font-size e o font-style. Há uma ordem para se colocar os valores, 1° o font-style, 2° o font-weight, 3° o font-size e por último o font-family.</p>
     <p>PS: Caso você não queira especificar um dos valores, basta não colocar nada e pular para o próximo.</p>
     <h3>Fontes Externas</h3>
+    <h4>Por Link</h4>
     <p>Se vamos usar apenas as fontes pré-instaladas nos nossos dispositivos, ficaremos muito limitados, então vou lhe apresentar uma ferramenta gratuita, o <a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a>.</p>
     <p>Procure a fonte que você quer e selecione. Depois selecione o(s) estilo(s) que você quer desta fonte clicando em <em>select this style</em>. Use @import no css ou o &lt;link&gt; no html que o próprio Google Fonts disponibiliza.</p>
     <p>PS: @ indica uma REGRA no CSS, sempre coloque as regras primeiro, logo abaixo do <em>&lt;Style&gt;</em>.</p>
-    <p></p>
+    <h4>Baixando</h4>
+    <p>Exitem  vários sites para se conseguir fontes, um deles é o <a href="https://www.dafont.com" target="_blank" rel="external">DaFont</a>.</p>
+    <p>*SEMPRE QUE FOR ESCOLHER UMA FONTE, PRESTE ATENÇÃO NOS CARACTERES ACENTUADOS, ALGUMAS FONTES NÃO OS POSSUEM.*</p>
+    <p>Baixe a fonte desejada, coloque em uma pasta que esteja na mesma pasta que o documento HTML(É o recomendado).</p>
+    <p>As fontes geralmente possuem 2 tipos de arquivo, otf e ttf, o melhor tipo para se usar vai depender do seu navegador.</p>
+    <p>Agora vamos para o código do CSS, abra a tag style dentro do head, você irá colocar uma regra que é também um seletor especial, chamado font-face. Dentro deste seletor, haverá 2 comandos(font-family, src, font-weight e font-style). Veja o código a seguir:</p>
+<pre>
+  <code>
+    @font-face{
+      font-family: Lorem;
+      src: url('fonts\LoremIpsum.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </code>
+</pre>
+    <p>No <em>font-family</em> você escreve como irá se chamar a fonte no seu código(para exemplificar, a nossa fonte é LoremIpsum, mas no código eu a chamo por Lorem), no <em>src</em> escreve-se o nome do arquivo e o tipo de arquivo, no <em>format</em>, coloque o tipo de format, há vários(opentype que é o otf; truetype que é o ttf; embedded-opentype; truetype-att que é Apple Advanced Typography; svg;), no <em>font-weight</em> escreva o peso(bold, bolder, lighter etc), no <em>font-style</em> escreva o estilo(normal, itálico, sublinhado etc).</p>
+    <hr>
+    <h3>Capturando Fontes de outros Sites</h3>
+    <p>Vamos para o <a href="https://chrome.google.com/webstore/category/extensions?hl=pt-BR" target="_blank" rel="external">Chrome Web Store</a>, vou te mostrar uma extensão muito interessante.</p>
+    <p>Pesquise por Fonts Ninja, adicione a extensão. O Fonts Ninja não é apenas uma extensão, é também um serviço que pode ser assinado e ter acesso a várias fontes. </p>
+    <p>Essa extensão pode ser usada para identificar diversas informações do conteúdo, o tamanho, a família, o estilo etc. </p>
   </main>
   </body>
 </html>
