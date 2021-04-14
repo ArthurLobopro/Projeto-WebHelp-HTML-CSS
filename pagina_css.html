@@ -21,48 +21,36 @@
         font-size: 30px;
       }
     </style>
-    <script>
-      $(".drop")
-      .mouseover(function(){
-      $(".dropdown").show(300);
-      });
-      $(".drop")
-      .mouseleave(function(){
-      $(".dropdown").hide(300);
-      });
-      </script>
   </head>
+
   <body>
-  <main>
+  <div class="Menu">
     <h1>Bem-Vindo(a) à página sobre CSS ^^ </h1>
-    <!--<nav class="nav">
+    <nav class="nav">
 			<ul>
-				<li><a href="#">---</a>
-			<li><a href="#">---</a>
-				<li class="drop"><a href="#">---</a>
-					<ul class="dropdown">
-						<li><a href="#">---</a></li>
-						<li><a href="#">---</a></li>
-						<li><a href="#">---</a></li>
-					</ul>
-				</li>
-				<li><a href="#">---</a>
-				<li><a href="#">---</a>
-			</ul>
-		</nav>-->
-    <hr>
-    <h2>Tipos de CSS</h2>
+			  <li><a href="#h2-1">Tipos de CSS</a>
+			  <li><a href="#h2-2">Hierarquia das CSS</a>
+			  <li><a href="#h2-3">Cores</a>
+			  <li><a href="#h2-4">Tipografia</a>
+			  <li><a href="#h2-5">O Id e Class do CSS</a>
+		  </ul>
+	</nav>
+  <hr>
+  </div>
+  <br>
+  <main>
+    <h2 id="h2-1">Tipos de CSS</h2>
     <h3>CSS Interno</h3>
     <p>Clique <a href="pagina_css_interno.html">aqui</a> para ir para a página de CSS Interno</p>
     <h3>CSS Externo</h3>
     <p>Clique <a href="pagina_css_externo.html">aqui</a> para ir para a página de CSS externo</p>
     <hr>
-    <h2>Hierarquia das CSS</h2>
+    <h2 id="h2-2">Hierarquia das CSS</h2>
     <p>A CSS Inline(dentro da tag), é a que é considerada primeiro</p>
     <p>A CSS Interna é considerada em segundo</p>
     <p>E em terceiro, vem a CSS externa</p>
     <hr>
-    <h2>Cores</h2>
+    <h2 id="h2-3">Cores</h2>
     <h3>Como usar</h3>
     <p>Há 4 maneiras de se colocar cores: por nome; hexadecimal; rgb; hsl;</p>
     <h4>* Hexadecimal</h4>
@@ -141,7 +129,7 @@
   </code>
 </pre>
     <hr>
-    <h2>Tipografia</h2>
+    <h2 id="h2-4">Tipografia</h2>
     <p>Assim como as cores, a forma de escrita também desencadeia sensações nos seres humanos. Determinadas fontes, tem uma maior compatibilidade/fazem mais sentido em determinados assuntos/palavras.</p>
     <h3>Anatomia do Tipo</h3>
     <p>No começo da criação de todas as fontes, é decidida uma altura para as minúsculas, essa altura é baseada na altura da letra "x" e é chamada <em>altura-x</em>. Também é decidida uma altura para as letras maiúsculas, chamada de <em>altura das maiúsculas</em>. Pode se perceber que algumas letras, mesmo minúsculas, tem um pequeno vazamento da altura-x, esse vazamento, quando para cima, é chamado <em>ascendente</em>, e, quando para baixo, é chamado <em>descendente</em>. A soma de tudo, ascendente e descendente, é chamado <em>corpo</em>.</p>
@@ -251,15 +239,15 @@
   </code>
 </pre>
     <p style="text-indent: 50px; color: #F39209;">Este parágrafo está espaçado.</p>
-    <h3>O Id e Class do CSS</h3>
-    <h4>* O Id</h4>
+    <h2 id="h2-5">O Id e Class do CSS</h2>
+    <h3>* O Id</h3>
     <p>O Id(Identificação) é uma forma de personalizar seus seletores, caso queira configurações diferentes para um mesmo seletor</p>
     <p>Para utilizar, dentro da abertura de alguma tag, escreva <em>Id="NomeDeIdentificação"</em>. Para chamar no CSS, escreva <em>#NomeDeIdentificação</em>.</p>
     <p>O Id é case-sensitive, ou seja, é <em>sensível à caixa das letras</em> ou <em>sensível a maiúsculas e minúsculas</em>.</p>
-    <h4>* O Class</h4>
+    <h3>* O Class</h3>
     <p>O Class(Classe) é uma outra forma de personalizar seus seletores, mas tem diferenças em relação ao Id.</p>
     <p>Diferente do Id, você pode ter vários elementos com um mesmo Class, e também, no CSS você se refere a um Class utilizando "." ao invés de "#".</p>
-    <h4>* Extra</h4>
+    <h3>* Extra</h3>
     <p>AVISO: De acordo com o <a href="https://pt.wikipedia.org/wiki/W3C">W3C</a>, não se deve utilizar o mesmo Id duas vezes no HTML.</p>
     <p>Dica, não nomeie os seus Id e Class baseado nas características que serão atribuídas a eles.<br>
     Ex: Id="TimesNewRoman"</p>
@@ -268,5 +256,15 @@
     <p>Dependendo das configurações, você pode usar um Id e um Class numa mesma tag.<br>
     Ex: &lt;p Id="Sublinhar" Class="Destacar"&gt;&lt;/p&gt;</p>
   </main>
+  <script>
+    $(".drop")
+    .mouseover(function(){
+    $(".dropdown").show(300);
+    });
+    $(".drop")
+    .mouseleave(function(){
+    $(".dropdown").hide(300);
+    });
+    </script>
   </body>
 </html>
