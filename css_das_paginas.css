@@ -47,41 +47,38 @@ img{
 	border: 3px solid black;
 	border-radius: 20px;
 }
-nav{/*mexe no menu azul inteiro*/
+nav{
 	border-radius: 10px;
-	margin: auto;
+	margin: 0 auto;
 	max-width: 1000px;
-	background: rgba(56, 142, 255, 0.9);
-	box-shadow:0 3px 15px rgba(0,0,0,0.5);
+	background: #4A74FF;
+	box-shadow:0 3px 15px rgba(0,0,0,.15);
 }
 nav::after{
 	display: block;
 	content: '';
 	clear: both;
 }
-nav ul{/*mexe em todas as caixas do menu*/
-	display: grid;
-	grid-template-columns: repeat(5, auto);
-	padding-left: 0px;
+nav ul{
+	padding: 0;
+	margin: 0;
 	list-style: none;
 }
-nav ul li{/*mexe nas "caixas" do menu*/
+nav ul li{
 	float: left;
 	position: relative;
 }
-nav ul li a{/*mexe nas "caixas" do menu*/
+nav ul li a{
 	display: block;
-	color: rgb(0, 0, 0);
+	color: white;
 	text-decoration: none;
-	padding: 20px 49px;
+	padding: 1rem 2rem;
 	border-top: 2px solid transparent;
 	border-bottom: 2px solid transparent;
 	transition: all .3s ease-in-out;
 }
 nav ul li a:hover, nav ul li a:focus{
-	border-radius: 5px;
 	background: rgba(0, 0, 0, .15);
-	color: white;
 }
 nav ul li a:focus{
 	color: white;
@@ -95,11 +92,12 @@ nav ul li ul li{
 }
 nav ul li ul li a{
 	background: transparent;
-	color: black;
+	color: #555;
+	border-bottom: 1px solid #DDE0E7;
 }
 nav ul li ul li a:hover, nav ul li ul li a:focus{
-	background: rgba(0, 0, 0, .15);
-	color: white;
+	background: #eee;
+	color: #111;
 }
 .dropdown{
 	display: none;
