@@ -62,8 +62,8 @@ nav::after{
 nav ul{/*mexe em todas as caixas do menu*/
 	display: grid;
 	grid-template-columns: repeat(5, auto);
-	padding-left: 0px;
 	list-style: none;
+	padding-left: 0px;
 }
 nav ul li{/*mexe nas "caixas" do menu*/
 	float: left;
