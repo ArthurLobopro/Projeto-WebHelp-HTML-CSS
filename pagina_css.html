@@ -31,6 +31,13 @@
 			  <li><a href="#h2-1">Tipos de CSS</a>
 			  <li><a href="#h2-2">Hierarquia das CSS</a>
 			  <li><a href="#h2-3">Cores</a>
+          <!--<ul>
+            <li><a href="h2-3-1">Como Usar</a>
+            <li><a href="h2-3-2">Psicologia das Cores</a>
+            <li><a href="h2-3-3">Harmonia das Cores</a>
+            <li><a href="h2-3-4">Programas de Ajuda</a>
+            <li><a href="h2-3-5">Gradiente/Degradê</a>
+          </ul>-->
 			  <li><a href="#h2-4">Tipografia</a>
 			  <li><a href="#h2-5">O Id e Class do CSS</a>
 		  </ul>
@@ -51,7 +58,7 @@
     <p>E em terceiro, vem a CSS externa</p>
     <hr>
     <h2 id="h2-3">Cores</h2>
-    <h3>Como usar</h3>
+    <h3 id="h2-3-1">Como usar</h3>
     <p>Há 4 maneiras de se colocar cores: por nome; hexadecimal; rgb; hsl;</p>
     <h4>* Hexadecimal</h4>
     <p>O Hexadecimal tem 16 algarismos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E e F, onde 0 é o menor valor e F o maior.</p>
@@ -69,7 +76,7 @@
     <p style="color: hsla(240, 100%, 50%, 0.5);">A transparência no HSL é como no RGB, a quarta medição, indo de 0.000 à 1.000: hsla(240, 100%, 50%, 0.5)</p>
     <p>Como percebido, nos códigos rgb() e hsl(), a transparência é representada por "a", chamado de alfa, virando rgba() e hsla()</p>
     <hr>
-    <h3>Psicologia das Cores</h3>
+    <h3 id="h2-3-2">Psicologia das Cores</h3>
     <p>Todas as cores são de grande importância no mundo atual e é comprovado científicamente que cada uma tem um efeito no nosso inconsciente que desperta diferentes sensações. Você pode perceber isso na prática, observando grandes sites/empresas</p>
     <p>Já se perguntou por que o Facebook, Twitter, Linkedin, Dell, Hp e Intel usam a cor azul em seus sites? Eles usam o azul porque ele tem uma ligação com os conceitos de competência, calma, sabedoria, confiança, profissionalismo, integridade e segurança. Na nossa página você pode perceber que também usamos o azul. Além disso, o azul é uma das cores que as pessoas mais gostam, com 45% de aceitação entre homens e mulheres e com menor taxa de rejeição, apenas 1% das pessoas dizem q não gostam do azul.</p>
     <p>Conseguiu entender como as cores são importantes? Então veja a seguir, os efeitos das principais cores:</p>
@@ -77,7 +84,7 @@
       <img src="midia/fotos/tabela_de_cores_redi.png" alt="Tabela explicando os efeitos" id="Imagem">
     </div>
     <hr>
-    <h3>Harmonia das Cores</h3>
+    <h3 id="h2-3-3">Harmonia das Cores</h3>
       <div>
         <img src="midia/fotos/circulo_cromatico_red_cort.png" alt="Círculo Cromático">
       </div>
@@ -111,13 +118,13 @@
     <h4>* Monocromia</h4>
     <p>Escolha uma cor, depois você irá mudar duas características dessa cor, a saturação e o brilho, 3 vezes, usando o hsl.</p>
     <hr>
-    <h3>Programas de Ajuda</h4>
+    <h3 id="h2-3-4">Programas de Ajuda</h4>
     <p>Para facilitar seu trabalho em relação à paleta de cores, acesse <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external">Adobe Color</a>, nele você consegue criar as mais diversas paletas de cores, além de conseguir extrair temas de imagens e sugestões de paletas.</p>
     <p>Também há o <a href="https://paletton.com/" target="_blank" rel="external">Paletton</a>, nele você também consegue as mais diversas paletas de cores, mas com  um diferencial, você consegue ver um exemplo da sua paleta aplicada em um site.</p>
     <p>Você ja navegou por um site que gosta muito de acessar e viu uma cor que você gostou muito, mas não sabe como usar aquela cor? Então eu lhe apresento uma extensão muito legal do Chrome. O ColorZilla é uma ferramenta muito útil para a situação que eu acabei de falar, clique <a href="https://chrome.google.com/webstore/category/extensions?hl=pt-BR" target="_blank" rel="external">aqui</a> para ir à Chrome Web Store.</p>
     <p>Digite ColorZilla, na barra de pesquisa no canto superior esquerdo, em seguida, clique na extensão, depois em "Usar no Chrome" e "Adicionar extensão".</p>
     <hr>
-    <h3>Gradiente/Degradê</h3>
+    <h3 id="h2-3-5">Gradiente/Degradê</h3>
     <p>Criar degradês é relativamente fácil, no arquivo css, siga o exemplo</p>
 <pre>
   <code>
@@ -240,14 +247,14 @@
 </pre>
     <p style="text-indent: 50px; color: #F39209;">Este parágrafo está espaçado.</p>
     <h2 id="h2-5">O Id e Class do CSS</h2>
-    <h3>* O Id</h3>
+    <h3>O Id</h3>
     <p>O Id(Identificação) é uma forma de personalizar seus seletores, caso queira configurações diferentes para um mesmo seletor</p>
     <p>Para utilizar, dentro da abertura de alguma tag, escreva <em>Id="NomeDeIdentificação"</em>. Para chamar no CSS, escreva <em>#NomeDeIdentificação</em>.</p>
     <p>O Id é case-sensitive, ou seja, é <em>sensível à caixa das letras</em> ou <em>sensível a maiúsculas e minúsculas</em>.</p>
-    <h3>* O Class</h3>
+    <h3>O Class</h3>
     <p>O Class(Classe) é uma outra forma de personalizar seus seletores, mas tem diferenças em relação ao Id.</p>
     <p>Diferente do Id, você pode ter vários elementos com um mesmo Class, e também, no CSS você se refere a um Class utilizando "." ao invés de "#".</p>
-    <h3>* Extra</h3>
+    <h3>Extra</h3>
     <p>AVISO: De acordo com o <a href="https://pt.wikipedia.org/wiki/W3C">W3C</a>, não se deve utilizar o mesmo Id duas vezes no HTML.</p>
     <p>Dica, não nomeie os seus Id e Class baseado nas características que serão atribuídas a eles.<br>
     Ex: Id="TimesNewRoman"</p>
@@ -255,6 +262,8 @@
     Ex: class="MudarFonte Destacar"</p>
     <p>Dependendo das configurações, você pode usar um Id e um Class numa mesma tag.<br>
     Ex: &lt;p Id="Sublinhar" Class="Destacar"&gt;&lt;/p&gt;</p>
+    <h3>Pseudo-Classes</h3>
+    <p></p>
   </main>
   <script>
     $(".drop")

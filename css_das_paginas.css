@@ -47,38 +47,41 @@ img{
 	border: 3px solid black;
 	border-radius: 20px;
 }
-nav{
+nav{/*mexe no menu azul inteiro*/
 	border-radius: 10px;
-	margin: 0 auto;
+	margin: auto;
 	max-width: 1000px;
-	background: #4A74FF;
-	box-shadow:0 3px 15px rgba(0,0,0,.15);
+	background: rgba(56, 142, 255, 0.9);
+	box-shadow:0 3px 15px rgba(0,0,0,0.5);
 }
 nav::after{
 	display: block;
 	content: '';
 	clear: both;
 }
-nav ul{
-	padding: 0;
-	margin: 0;
+nav ul{/*mexe em todas as caixas do menu*/
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	padding-left: 0px;
 	list-style: none;
 }
-nav ul li{
+nav ul li{/*mexe nas "caixas" do menu*/
 	float: left;
 	position: relative;
 }
-nav ul li a{
+nav ul li a{/*mexe nas "caixas" do menu*/
 	display: block;
-	color: white;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
-	padding: 1rem 2rem;
+	padding: 20px 49px;
 	border-top: 2px solid transparent;
 	border-bottom: 2px solid transparent;
 	transition: all .3s ease-in-out;
 }
 nav ul li a:hover, nav ul li a:focus{
+	border-radius: 5px;
 	background: rgba(0, 0, 0, .15);
+	color: white;
 }
 nav ul li a:focus{
 	color: white;
@@ -92,12 +95,11 @@ nav ul li ul li{
 }
 nav ul li ul li a{
 	background: transparent;
-	color: #555;
-	border-bottom: 1px solid #DDE0E7;
+	color: black;
 }
 nav ul li ul li a:hover, nav ul li ul li a:focus{
-	background: #eee;
-	color: #111;
+	background: rgba(0, 0, 0, .15);
+	color: white;
 }
 .dropdown{
 	display: none;
