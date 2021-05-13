@@ -47,7 +47,7 @@ img{
 	border: 3px solid black;
 	border-radius: 20px;
 }
-nav{/*mexe no menu azul inteiro*/
+nav{
 	border-radius: 10px;
 	margin: auto;
 	max-width: 1000px;
@@ -59,17 +59,17 @@ nav::after{
 	content: '';
 	clear: both;
 }
-nav ul{/*mexe em todas as caixas do menu*/
+nav ul{
 	display: grid;
 	grid-template-columns: repeat(5, auto);
 	list-style: none;
 	padding-left: 0px;
 }
-nav ul li{/*mexe nas "caixas" do menu*/
+nav ul li{
 	float: left;
 	position: relative;
 }
-nav ul li a{/*mexe nas "caixas" do menu*/
+nav ul li a{
 	display: block;
 	color: rgb(0, 0, 0);
 	text-decoration: none;
@@ -90,13 +90,25 @@ nav ul li a:not(:only-child)::after{
 	padding-left: 4px;
 	content: ' ▾';
 }
+nav ul li ul{
+	margin-left:-42px;
+	list-style:none;
+	position:absolute;
+	display: none;
+}
+nav ul li:hover ul{
+	display:block;
+	border-radius: 10px;
+	margin: auto;
+	max-width: 1000px;
+	background: rgba(56, 142, 255, 0.95);
+	box-shadow:0 3px 15px rgba(0,0,0,0.5);
+}
 nav ul li ul li{
 	min-width: 190px;
+	display:block;
 }
-nav ul li ul li a{
-	background: transparent;
-	color: black;
-}
+
 nav ul li ul li a:hover, nav ul li ul li a:focus{
 	background: rgba(0, 0, 0, .15);
 	color: white;
