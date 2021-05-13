@@ -4,6 +4,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 body{
+	/*Dimensão da esquerda para a direita é 1360px*/
 	background-color: #F1D8C9;
 }
 .Menu{
@@ -12,7 +13,10 @@ body{
 	box-shadow: 5px 5px 13px #614e43be;
 	width: 1000px;
 	padding: 30px;
-	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 180px;
+	margin-right: 180px;
 }
 main{
 	border-radius: 20px;
@@ -20,7 +24,10 @@ main{
 	box-shadow: 5px 5px 13px #614e43be;
 	width: 800px;
 	padding: 30px;
-	margin: auto;
+	margin-left: 280px;
+	margin-right: 280px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 h1{
 	color: #F39209;
@@ -80,7 +87,7 @@ nav ul li a{
 }
 nav ul li a:hover, nav ul li a:focus{
 	border-radius: 5px;
-	background: rgba(0, 0, 0, .15);
+	background: rgba(0, 0, 0, 0.3);
 	color: white;
 }
 nav ul li a:focus{
@@ -110,7 +117,7 @@ nav ul li ul li{
 }
 
 nav ul li ul li a:hover, nav ul li ul li a:focus{
-	background: rgba(0, 0, 0, .15);
+	background: rgba(0, 0, 0, .3);
 	color: white;
 }
 .dropdown{
