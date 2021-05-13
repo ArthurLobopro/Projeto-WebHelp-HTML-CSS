@@ -8,29 +8,36 @@
 		<link rel="stylesheet" href="css_das_paginas.css">
 	</head>
 
-	<!--Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla. Ea iusto explicabo quos saepe quae, nobis eaque reiciendis soluta et cupiditate impedit enim tempora, molestias perferendis, obcaecati quibusdam quaerat!
-
-	https://codepen.io/Naymapl/pen/zwdyyX
-
-	Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, aspernatur veniam doloremque quos est voluptate numquam suscipit ut, a architecto dolores omnis repudiandae soluta libero? Itaque accusamus at illo id!-->
-
 	<body>
-	<div class="Menu">
+	<header>
 		<h1> Bem-Vindo(a) a página sobre HTML ^^ </h1>
 		<nav class="nav">
 			<ul>
 				<li><a href="#h2-1">O conteúdo</a>
-				<li><a href="#h2-2">Listas</a>
+				<li><a>Listas</a>
 				<li><a href="#h2-3">Emojis no site</a>
 				<li><a href="#h2-4">FavIcon</a>
-				<li><a href="#h2-5">Sobre imagens</a></li>
+				<li><a href="#h2-5">Sobre imagens▾</a>
+					<ul>
+						<li><a href="h2-5-1">Colocando Imagens</a>
+						<li><a href="h2-5-2">Imagens Dinâmicas</a>
+					</ul>
 				<li><a href="#h2-6">Áudios em HTML</a>
-				<li><a href="#h2-7">Vídeos em HTML</a>
-				<li><a href="#h2-8">Links e Âncoras</a></li>
+				<li><a>Vídeos em HTML▾</a>
+					<ul>
+						<li><a href="h2-7-1">Vídeos Hospedados Localmente</a>
+						<li><a href="h2-7-2">Vídeos hospedados externamente</a>
+					</ul>
+				<li><a href="#h2-8">Links/Âncoras▾</a>
+					<ul>
+						<li><a href="h2-8-1">Links externos</a>
+						<li><a href="h2-8-2">Links internos</a>
+						<li><a href="h2-8-3">Links de Download</a>
+					</ul>
 			</ul>
 		</nav>
 		<hr>
-	</div>
+	</header>
 	<br>
 	<main>
 		<h2 id="h2-1">O conteúdo escrito e sua semântica</h2>
@@ -51,7 +58,11 @@
 		<p>Para sobrescrever, use &lt;sup&gt;&lt;/sup&gt; (Exemplo: X<sup>4</sup>+3)</p>
 		<p>Para subscrever, use &lt;sub&gt;&lt;/sub&gt; (Exemplo: H<sub>2</sub>O - fórmula da água)</p>
 		<p>A tag &lt;code&gt;&lt;/code&gt; é usada para facilitar a leitura de códigos, pois deixa o texto monoespaçado</p>
-		<p>Exemplo:<code>document.getElementById('teste')</code></p>
+		<p>Exemplo: 
+			<code>
+				document.getElementById('teste')
+			</code>
+		</p>
 		<p>Porém, a tag &lt;code&gt;&lt;/code&gt; perde sua indetação, por exemplo, se seu código tem uma quebra de linha, a tag &lt;code&gt;&lt;/code&gt; irá ignorar a quebra e colocar tudo na mesma linha</p>
 		<p>Para evitar isso, coloque a tag dentro da tag &lt;pre&gt;&lt;/pre&gt;. Veja os exemplos a seguir:</p>
 		<p>Sem a tag &lt;pre&gt;&lt;/pre&gt;:</p>
@@ -185,7 +196,7 @@
 		<p>Para adicionar um FavIcon, use a tag &lt;link rel="shortcut icon" href="Nome do arquivo"&gt; (É recomendado que o tipo de arquivo do ícone seja .ico, que é próprio para isso)</p>
 		<hr>
 		<h2 id="h2-5">Sobre imagens</h2>
-		<h3>Colocando imagens</h3>
+		<h3 id="h2-5-1">Colocando imagens</h3>
 		<p>Dica: Gimp é um programa gratuito usado para conversão e edição de fotos, baixe</p>
 		<p>Nem todas as imagens podem ser utilizadas em seus sites devido ao copyright, atente-se à isso</p>
 		<p>Unsplash e Pexels são ótimos lugares para se encontrar imagens</p>
@@ -196,8 +207,8 @@
 		<p>A imagem é a mesma, mas se você olhar o código, verá que o caminho é diferente</p>
 		<p>Você pode adicionar imagens por link também</p>
 		<img src="https://diagrad.com.br/wp-content/uploads/2017/08/astronauta-640x407.jpg" alt="Imagem de astronauta">
-		<h3>Imagens dinâmicas</h3>
-		<p>Nem todos os clientes estão pelo computador, eles não podem ver imagens muito grandes, pois atrapalha e o seu site fica pesado</p>
+		<h3 id="h2-5-2">Imagens dinâmicas</h3>
+		<p>Nem todos os cl ientes estão pelo computador, eles não podem ver imagens muito grandes, pois atrapalha e o seu site fica pesado</p>
 		<p>Para resolver este problema, a tag &lt;picture&gt;&lt;/picture&gt; combinada com as tags &lt;img&gt;&lt;/img&gt; e &lt;source&gt;&lt;/source&gt; fazem com que o site automaticamente selecione imagens menores ou maiores para estes clientes</p>
 		<picture>
 			<source media="(max-width: 700px)" srcset="midia/fotos/pequena.png" type="image/png">
@@ -238,7 +249,7 @@
 		<p>E novamente eu estou aqui avisando, tome cuidado com o Copyright, para ter alguns vídeos sem Copyright, acesse Pexels (atente-se ao tamanho dos vídeos)</p>
 		<p>E também como os áudios, nem todos os formatos de vídeos são compatíveis (os mais utilizados e suportados são MP4/M4V, WEBM e OGV)</p>
 		<p>Dica: HandBrake é um programa gratuito e OpenSource, usado para conversão de vídeos, parecido com o Gimp só que para vídeos</p>
-		<h3>Vídeos hospedados localmente</h3>
+		<h3 id="h2-7-1">Vídeos hospedados localmente</h3>
 		<p>Os vídeos são iguais, mas são de diferentes formatos, respectivamente, .M4V, .MKV, .WEBM e .OGV</p>
 		<video width="500" controls>
 			<source src="midia\video\pexels_video_720p30.m4v" type="video/mp4">
@@ -247,7 +258,7 @@
 			<source src="midia\video\pexels_video_720p30.ogv" type="video/ogg">
 			<p><b>*Seu navegador não é compatível com nenhum dos formatos de vídeo apresentados no site</b></p>
 		</video>
-		<h3>Vídeos hospedados externamente</h3>
+		<h3 id="h2-7-2">Vídeos hospedados externamente</h3>
 		<p>Pode adicionar vídeos por links também, usarei um exemplo do Youtube</p>
 <pre>
 <code>
@@ -263,21 +274,22 @@ encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&g
 		<p>Nele, também há o Copyright, possui uma melhor qualidade de vídeo, porém o seu CODEC é meio lento, então faça um equilíbrio, há uma maior personalização de configurações no código para incorporar </p>
 		<hr>
 		<h2 id="h2-8">Links e Âncoras</h2>
-		<h3>Links externos</h3>
+		<h3 id="h2-8-1">Links externos</h3>
 		<p>Para acessar o Youtube clique <a href="https://youtube.com" target="_blank" rel="external">aqui</a></p>
 		<p>Quando alguém clicar no hiperlink, seu site será sobreposto, então para fazer com que o hiperlink seja aberto em uma nova guia use target="_blank" rel="external" logo após o href=""</p>
-		<h3>Links internos</h3>
+		<h3 id="h2-8-2">Links internos</h3>
 		<p>Existem 2 tipos de links internos</p>
 		<p>Para o primeiro tipo, vamos precisar de um novo arquivo HTML, o qual já está pronto para uso</p>
 		<a href="pagina_html2.html" target="_self" rel="next">Aqui está o segundo documento HTML</a>
 		<p>É o mesmo processo dos links externos, mas ao invés de colocar a URL, coloque o nome do arquivo (cheque o código)</p>
 		<p>O segundo tipo de link interno é por sub-pastas, quando o outro documento está em uma pasta dentro da pasta com o arquivo principal</p>
 		<a href="subpasta\pagina_html3.html">Aqui está o terceiro documento HTML</a>
-		<h3>Links de Download</h3>
+		<h3 id="h2-8-3">Links de Download</h3>
 		<p>Para saber o type, vá ao site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Media Types</a></p>
 		<a href="subpasta\pdf.zip" download="pdf.zip" type="application/zip">Clique aqui para baixar o PDF</a>
 		<hr>
 	</main>
+
 	<script>
 		$(".drop")
 		.mouseover(function() {
