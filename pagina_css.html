@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Sobre CSS </title>
     <link rel="shortcut icon" href="midia/fotos/logo_css.ico">
-    <link rel="stylesheet" href="css_das_paginas.css">
+    <link rel="stylesheet" href="css.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -30,7 +30,7 @@
 			<ul>
 			  <li><a href="#h2-1">Tipos de CSS</a>
 			  <li><a href="#h2-2">Hierarquia das CSS</a>
-			  <li><a >Cores</a>
+			  <li><a >Cores▾</a>
           <ul>
             <li><a href="#h2-3-1">Como Usar</a>
             <li><a href="#h2-3-2">Psicologia das Cores</a>
@@ -245,8 +245,9 @@
     }
   </code>
 </pre>
+    <p style="color: #F39209;">Este parágrafo não está espaçado</p>
     <p style="text-indent: 50px; color: #F39209;">Este parágrafo está espaçado.</p>
-    <h2 id="h2-5">O Id e Class do CSS</h2>
+    <h2 id="h2-5">O Id, o Class e mais</h2>
     <h3>O Id</h3>
     <p>O Id(Identificação) é uma forma de personalizar seus seletores, caso queira configurações diferentes para um mesmo seletor</p>
     <p>Para utilizar, dentro da abertura de alguma tag, escreva <em>Id="NomeDeIdentificação"</em>. Para chamar no CSS, escreva <em>#NomeDeIdentificação</em>.</p>
@@ -263,8 +264,15 @@
     <p>Dependendo das configurações, você pode usar um Id e um Class numa mesma tag.<br>
     Ex: &lt;p Id="Sublinhar" Class="Destacar"&gt;&lt;/p&gt;</p>
     <h3>Pseudo-Classes</h3>
-    <p></p>
-
+    <p>As Pseudo-Classes estão relacionadas ao estado dos elementos(active, current, default etc), um exemplo é a Pseudo-Classe Hover.</p>
+    <h4>* Hover</h4>
+    <p>Hover significa <em>"quando passar o mouse em cima"</em>, como o próprio nome propõe, uma Classe com a Pseudo-Classe Hover, executará uma ação/função quando passar o mouse em cima dela (mudar a cor do background ou da letra, o font-style etc).</p>
+    <h4>* Visited</h4>
+    <p>Visited significa <em>"visitado"</em>, seu papel é fazer mudanças para links que foram ou não foram visitados, deixando por exemplo, os links visitados com a cor amarela e os não visitados com a cor azul.</p>
+    <h4>* Active</h4>
+    <p>Active significa <em>"ativado"</em>, seu papel é fazer uma ação/função quando um link está sendo clicado. Como por exemplo, mudar a cor do elemento com link.</p>
+    <h3>Pseudo-Elementos</h3>
+    <p>Os Pseudo-Elementos estão relacionados ao conteúdo, </p>
   </main>
   
   <script>
