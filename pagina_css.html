@@ -255,6 +255,7 @@
     <h3>O Class</h3>
     <p>O Class(Classe) é uma outra forma de personalizar seus seletores, mas tem diferenças em relação ao Id.</p>
     <p>Diferente do Id, você pode ter vários elementos com um mesmo Class, e também, no CSS você se refere a um Class utilizando "." ao invés de "#".</p>
+    <p>Para determinar que algo pertence a uma classe, escreva dentro da abertura da tag, <em>class="NomeDaClasse"</em>.</p>
     <h3>Extra</h3>
     <p>AVISO: De acordo com o <a href="https://pt.wikipedia.org/wiki/W3C">W3C</a>, não se deve utilizar o mesmo Id duas vezes no HTML.</p>
     <p>Dica, não nomeie os seus Id e Class baseado nas características que serão atribuídas a eles.<br>
@@ -265,14 +266,20 @@
     Ex: &lt;p Id="Sublinhar" Class="Destacar"&gt;&lt;/p&gt;</p>
     <h3>Pseudo-Classes</h3>
     <p>As Pseudo-Classes estão relacionadas ao estado dos elementos(active, current, default etc), um exemplo é a Pseudo-Classe Hover.</p>
-    <h4>* Hover</h4>
+    <p>Para indicar uma Pseudo-Classe, na frente do seletor de alguma tag, porém antes das chaves, escreva <em>:Pseudo-ClasseQueDesejar</em></p>
+    <h4>* :Hover</h4>
     <p>Hover significa <em>"quando passar o mouse em cima"</em>, como o próprio nome propõe, uma Classe com a Pseudo-Classe Hover, executará uma ação/função quando passar o mouse em cima dela (mudar a cor do background ou da letra, o font-style etc).</p>
-    <h4>* Visited</h4>
+    <h4>* :Visited</h4>
     <p>Visited significa <em>"visitado"</em>, seu papel é fazer mudanças para links que foram ou não foram visitados, deixando por exemplo, os links visitados com a cor amarela e os não visitados com a cor azul.</p>
-    <h4>* Active</h4>
+    <h4>* :Active</h4>
     <p>Active significa <em>"ativado"</em>, seu papel é fazer uma ação/função quando um link está sendo clicado. Como por exemplo, mudar a cor do elemento com link.</p>
     <h3>Pseudo-Elementos</h3>
-    <p>Os Pseudo-Elementos estão relacionados ao conteúdo, </p>
+    <p>Os Pseudo-Elementos estão relacionados ao conteúdo, tem o objetivo de mudar ou adicionar algo à ele.</p>
+    <p>Para indicar uma Pseudo-Classe, na frente do seletor de alguma tag, porém antes das chaves, escreva <em>::Pseudo-ElementoQueDesejar</em></p>
+    <h4>* ::After</h4>
+    <p>After significa <em>"depois"</em>, ent se vc tem um seletor <em>"p"</em> seguido de <em>"after"</em>, dentro do seu seletor, tudo que você quiser será feito <em>"depois"</em> do <em>"p"</em>.</p>
+    <h4>* ::Before</h4>
+    <p>Before significa <em>"antes"</em>, ent se vc tem um seletor <em>"p"</em> seguido de <em>"before"</em>, dentro do seu seletor, tudo que você quiser será feito <em>"antes"</em> do <em>"p"</em>.</p>
   </main>
   
   <script>
