@@ -6,6 +6,11 @@
 		<title> Documento HTML </title>
 		<link rel="shortcut icon" href="midia/fotos/logo_html.ico">
 		<link rel="stylesheet" href="css.css">
+		<style>
+			div{
+				text-align: center;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -201,12 +206,18 @@
 		<p>Nem todas as imagens podem ser utilizadas em seus sites devido ao copyright, atente-se à isso</p>
 		<p>Unsplash e Pexels são ótimos lugares para se encontrar imagens</p>
 		<p>Use a tag &lt;img src="nome do arquivo da imagem" alt="um nome pra explicar a imagem"&gt; para usar uma imagem </p>
-		<img src="midia/fotos/papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
+		<div>
+			<img src="midia/fotos/papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
+		</div>
 		<p>Você pode usar imagens quando elas estão em sub-pastas (uma pasta dentro da pasta com o arquivo html)</p>
-		<img src="midia/fotos/papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
+		<div>
+			<img src="midia/fotos/papel_de_parede_750.jpg" alt="Plano de Fundo do meu PC">
+		</div>
 		<p>A imagem é a mesma, mas se você olhar o código, verá que o caminho é diferente</p>
 		<p>Você pode adicionar imagens por link também</p>
-		<img src="https://diagrad.com.br/wp-content/uploads/2017/08/astronauta-640x407.jpg" alt="Imagem de astronauta">
+		<div>
+			<img src="https://diagrad.com.br/wp-content/uploads/2017/08/astronauta-640x407.jpg" alt="Imagem de astronauta">
+		</div>
 		<h3 id="h2-5-2">Imagens dinâmicas</h3>
 		<p>Nem todos os cl ientes estão pelo computador, eles não podem ver imagens muito grandes, pois atrapalha e o seu site fica pesado</p>
 		<p>Para resolver este problema, a tag &lt;picture&gt;&lt;/picture&gt; combinada com as tags &lt;img&gt;&lt;/img&gt; e &lt;source&gt;&lt;/source&gt; fazem com que o site automaticamente selecione imagens menores ou maiores para estes clientes</p>

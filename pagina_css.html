@@ -227,7 +227,7 @@
     <p>Clique em WhatTheFont, arraste a imagem para o local designado. Novamente selecione o texto na imagem para identificar.</p>
     <hr>
     <h3>Alinhamento de textos</h3>
-    <p>Exitem 3 alinhamentos possiveis no CSS: right(direita), left(esquerda), center(centro) e justify(justificado: alinhado à direita e à esquerda).</p>
+    <p>Exitem 4 alinhamentos possiveis no CSS: right(direita), left(esquerda), center(centro) e justify(justificado: alinhado à direita e à esquerda).</p>
     <p>É no comando <em>text-align</em> que se coloca o alinhamento desejado. Veja o exemplo:</p>
 <pre>
   <code>
@@ -247,7 +247,7 @@
 </pre>
     <p style="color: #F39209;">Este parágrafo não está espaçado</p>
     <p style="text-indent: 50px; color: #F39209;">Este parágrafo está espaçado.</p>
-    <h2 id="h2-5">O Id, o Class e mais</h2>
+    <h2 id="h2-5">O Id, o Class e muito mais sobre CSS</h2>
     <h3>O Id</h3>
     <p>O Id(Identificação) é uma forma de personalizar seus seletores, caso queira configurações diferentes para um mesmo seletor</p>
     <p>Para utilizar, dentro da abertura de alguma tag, escreva <em>Id="NomeDeIdentificação"</em>. Para chamar no CSS, escreva <em>#NomeDeIdentificação</em>.</p>
@@ -274,12 +274,43 @@
     <h4>* :Active</h4>
     <p>Active significa <em>"ativado"</em>, seu papel é fazer uma ação/função quando um link está sendo clicado. Como por exemplo, mudar a cor do elemento com link.</p>
     <h3>Pseudo-Elementos</h3>
-    <p>Os Pseudo-Elementos estão relacionados ao conteúdo, tem o objetivo de mudar ou adicionar algo à ele.</p>
-    <p>Para indicar uma Pseudo-Classe, na frente do seletor de alguma tag, porém antes das chaves, escreva <em>::Pseudo-ElementoQueDesejar</em></p>
+    <p>Os Pseudo-Elementos são palavras-chave adicionadas a um seletor, permitem que você estilize ou adicione um conteúdo sobre uma parte específica de um elemento.</p>
+    <p>Para indicar uma Pseudo-Classe, na frente do seletor de alguma tag, porém antes das chaves, escreva <em>::Pseudo-ElementoQueDesejar</em> . <br> Ex: </p>
+    <pre>
+      <code>
+        p::After{
+          content: [Parágrafo];
+        }
+      </code>
+    </pre>
     <h4>* ::After</h4>
-    <p>After significa <em>"depois"</em>, ent se vc tem um seletor <em>"p"</em> seguido de <em>"after"</em>, dentro do seu seletor, tudo que você quiser será feito <em>"depois"</em> do <em>"p"</em>.</p>
+    <p>After significa <em>"depois"</em>, ent se vc tem um seletor <em>"p"</em> seguido de <em>"::after"</em>, dentro do seu seletor, tudo que você quiser será feito <em>"depois"</em> do <em>"p" (parágrafo)</em>.</p>
     <h4>* ::Before</h4>
-    <p>Before significa <em>"antes"</em>, ent se vc tem um seletor <em>"p"</em> seguido de <em>"before"</em>, dentro do seu seletor, tudo que você quiser será feito <em>"antes"</em> do <em>"p"</em>.</p>
+    <p>Before significa <em>"antes"</em>, ent se vc tem um seletor <em>"p"</em> seguido de <em>"::before"</em>, dentro do seu seletor, tudo que você quiser será feito <em>"antes"</em> do <em>"p" (parágrafo)</em>.</p>
+    <h4>* ::First-Line</h4>
+    <p>First-Line significa <em>"primeira linha"</em>, em um seletor <em>"p"</em> seguido de <em>"::first-line</em>, será aplicado uma mudança ou um conteúdo na <em>"primeira linha"</em> do <em>"p" (parágrafo)</em>.</p>
+    <h2>Box-Model</h2>
+    <p>Seguinte, todo elemento em HTML, é uma espécie de "caixa" e elas existem em 2 tipos, Box-Level e Inline-Level.</p>
+    <div>
+      <img src="midia\fotos\boxmodel.png" alt="Box Model" id="Imagem">
+    </div>
+    <p>Como você pode ver, são caixas dentro de outras caixas, esse fenômeno é chamado de "aninhamento".</p>
+    <p>Os Box Models se diferem pelas suas configurações pré-estabelecidas.</p>
+    <h3>Box-Level</h3>
+    <p>Aqui estão as configurações pré-estabelecidas do Box-Level:</p>
+    <ul>
+      <li>Ocupa todo o espaço horizontal disponibilizado pelo navegador (pode ser ajustado no CSS).
+      <li>No espaço vertical, ocupa apenas o necessário.
+      <li>Quebra um linha para ser adicionado.
+    </ul>
+    <p>As tags &lt;div&gt;, &lt;p&gt; e &lt;main&gt; são exemplos de Box-Level.</p>
+    <h3>Inline-Level</h3>
+    <p>Aqui estão as configurações pré-estabelecidas do Inline-Level:</p>
+    <ul>
+      <li>Ocupa apenas o espaço necessário, tanto no espaço horizontal, quanto no espaço vertical.
+      <li>Não quebra linha para ser adicionado.
+    </ul>
+    <p>As tags &lt;span&gt;, &lt;a&gt; e &lt;em&gt; são exemplos de Inline-Level.</p>
   </main>
   
   <script>
@@ -292,5 +323,6 @@
     $(".dropdown").hide(300);
     });
     </script>
+
   </body>
 </html>
