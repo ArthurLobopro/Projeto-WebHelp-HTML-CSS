@@ -3,24 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title> Sobre JavaScript </title>
+		<title> JavaScript </title>
 		<link rel="shortcut icon" href="midia/fotos/logo_js.ico">
 		<link rel="stylesheet" href="css.css">
-		<script>
-			$(".drop")
-			.mouseover(function(){
-			$(".dropdown").show(300);
-			});
-			$(".drop")
-			.mouseleave(function(){
-			$(".dropdown").hide(300);
-			});
-		</script>
+	
 	</head>
 
 	<body>
 	<main>
-		<h1> Bem-Vindo(a) à página sobre JavaScript ^^ </h1>
+		<h1> Bem-Vindos à página sobre JavaScript </h1>
 		<!--<nav class="nav">
 			<ul>
 				<li><a href="#">---</a>
@@ -36,22 +27,37 @@
 				<li><a href="#">---</a>
 			</ul>
 		</nav>-->
-		<h2>Script</h2>
-		<p>Primeiramente, para usar JavaScript em sua página, abra a tag &lt;script&gt;&lt;/script&gt;, é dentro dela que ficará todo os seus comandos JS</p>
-		<p>Essa tag deve ser aberta dentro do &lt;body&gt;&lt;/body&gt;</p>
-		<h2>Comandos</h2>
-		<p>window.alert('Texto'): lança um alerta</p>
-		<p>window.confirm('Texto'): pede uma confirmação</p>
-		<p>window.prompt('Texto'): uma pergunta que você pode responder</p>
-		<h2>Comentários</h2>
-		<p> // Deixa uma comentário de apenas uma linha</p>
-		<p>/* */ Deixa um comentário de várias linhas</p>
-		<p>Tudo que você colocar entre comentários não será considerado como comando</p>
-		<h2>Váriaveis e seus Tipos</h2>
-		<p>Há regras para as identificações de váriaveis: não pode ter espaço; comece com letra, $ ou _; não pode começar com número; pode usar símbolos e acentos; não pode ter nome de comandos do JS</p>
-		<h2>Área de resposta</h2>
-		<script>
-		</script>
+		<h2> Script </h2>
+		<p>Para usar JavaScript em sua página, abra a tag <b>&lt;script&gt;&lt;/script&gt;</b> dentro do <b>&lt;head&gt;&lt;/head&gt;</b> ou dentro do <b>&lt;body&gt;&lt;/body&gt;</b>, é dentro dela que ficará o seu código</p>
+		<h2> Comandos </h2>
+		<p><b>window.alert('Texto'):</b> lança um alerta.</p>
+		<p><b>window.confirm('Texto'):</b> pede uma confirmação do usuário.</p>
+		<p><b>window.prompt('Texto'):</b> faz uma pergunta para que o usuário responda.</p>
+		<h2> Comentários </h2>
+		<p> // Deixa uma comentário de apenas uma linha.</p>
+		<p>/* */ Deixa um comentário de várias linhas, o conteúdo do comentário ficará entre eles.</p>
+		<p>Tudo que você colocar entre comentários NÃO É considerado como código.</p>
+		<h2> Váriaveis e seus Tipos </h2>
+		<p>Há regras para as identificações de váriaveis e aqui estão elas.</p>
+		<ol type="I">
+		<p>Regras:</p>
+		<li>Uma variável NÃO pode ter espaço.
+		<li>Uma variável deve começar com uma letra, $ ou _.
+		<li>Uma variável NÃO pode começar com número.
+		<li>Uma variável pode conter símbolos e acentos.
+		<li>Uma variável NÃO pode ter nome de comandos do JS.
+		</ol>
 	</main>
+
+	<script>
+		$(".drop")
+		.mouseover(function(){
+		$(".dropdown").show(300);
+		});
+		$(".drop")
+		.mouseleave(function(){
+		$(".dropdown").hide(300);
+		});
+	</script>
 	</body>
 </html>
