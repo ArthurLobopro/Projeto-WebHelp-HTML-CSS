@@ -275,21 +275,21 @@
     <p>Before significa <b>"antes"</b>, ent se vc tem um seletor <b>"p"</b> seguido de <b>"::before"</b>, dentro do seu seletor, tudo que você quiser será feito <b>"antes"</b> do <b>"p"(parágrafo)</b>.</p>
     <h4>* ::First-Line </h4>
     <p>First-Line significa <b>"primeira linha"</b>, em um seletor <b>"p"</b> seguido de <b>"::first-line</b>, será aplicado uma mudança ou um conteúdo na <b>"primeira linha"</b> do <b>"p"(parágrafo)</b>.</p>
-    <h2>Grouping Tags</h2>
+    <h2> Grouping Tags </h2>
     <p>Antigamente, antes do HTML5 vir ao mundo, era comum que os websites fossem contruídos utilizando diversas div's, para construção do cabelhaço, conteúdo principal, menus, rodapés etc. Hoje em dia, o HTML5 disponibiliza algumas tags para facilitar a vida dos web developers que funcionam como div's, porém com nomes diferentes, o que ajuda a organizar o conteúdo do site e nos guiar.</p>
-    <h4>* Header</h4>
+    <h4>* Header </h4>
     <p>Header nada mais é do que o cabeçalho do seu site, é utilizado para a navegação pelo site ou como um elemento introdutório.</p>
-    <h4>* Nav</h4>
+    <h4>* Nav </h4>
     <p>Nav é uma abreviação para Navigation, é uma área própria que serve para navegar da sua páginas para outras páginas, ou navegar dentro da própria página, utilizando links internos e externos.</p>
-    <h4>* Main</h4>
+    <h4>* Main </h4>
     <p>Main é área onde é deixado o conteúdo principal da página, como o próprio nome diz.</p>
-    <h4>* Section</h4>
+    <h4>* Section </h4>
     <p>Section é onde aparece determinados conteúdos de elementos, como resultados de pesquisas.</p>
-    <h4>* Article</h4>
+    <h4>* Article </h4>
     <p>Article é o lugar onde fica algo retirado de algum lugar, pode ser um post de um blog/fórum, um artigo de revista ou jornal, um comentário de alguma rede social, ou seja, qualquer conteúdo considerado independente, que pode ser reproduzido.</p>
-    <h4>* Aside</h4>
+    <h4>* Aside </h4>
     <p>Aside é uma seção da página que mostra um conteúdo relacionado ao conteúdo próximo dele, geralmente representado em menus laterais.</p>
-    <h4>* Footer</h4>
+    <h4>* Footer </h4>
     <p>O Footer é onde fica um aviso de direitos autorais, o criador de uma seção ou links relacionados ao conteúdo abordado.</p>
     <h2 id="h2-6"> Box-Model </h2>
     <p>Todo elemento em HTML, é uma espécie de "caixa", e essas "caixas" existem em 2 tipos, Box-Level e Inline-Level.</p>
@@ -324,7 +324,7 @@
     <p>Podemos criar uma linha, chamada de Outline, ele fica dentro do Margin e sempre que aumenta de tamanho vaza para fora, porém nunca para dentro, além de nunca interferir no Margin.</p>
     <h4>* Caixa do Margin </h4>
     <p>O Margin é responsável pelo tamanho do espaço que separa as outras caixas internas(Border, Padding e Conteúdo), das caixas das outras tags. Não é influenciado pelas outras divisões.</p>
-    <h3>Sombreamento nas Caixas</h3>
+    <h3> Sombreamento nas Caixas </h3>
     <p>Para uma melhor estética do site, existe um sombreamento que pode ser adicionado aos elementos, chamado de Box-Shadow.</p>
     <p>O código na CSS funciona da seguinte maneira:</p>
 <pre>
@@ -346,6 +346,28 @@
     <div>
       <img src="midia\fotos\manipulando_box_shadow.PNG" alt="Quadro que permite manipular a sombra">
     </div>
+    <h3> Caixas com Pontas Arredondadas </h3>
+    <p>Para fins estéticos, o HTML5 nos disponibiliza uma configuração muito interessante, o border-radius. Ele faz com que as pontas da borda de algum elemento fiquem arredondadas.</p>
+    <p>Na CSS, o código funciona da seguinte maneira: </p>
+<pre>
+  <code>
+    h1{
+      border-radius: (1) (2) (3) (4);  OU   border-radius: (5);   OU   border-radius: (6) (7);
+    }
+  </code>
+</pre>
+    <p>Classificação:</p>
+    <ol>
+      <li> arredondamento do canto superior esquerdo.
+      <li> arredondamento do canto superior direito.
+      <li> arredondamento do canto inferior direito.
+      <li> arredondamento do canto inferior esquerdo.
+      <p>Você pode arredondar todos os cantos juntos: </p>
+      <li> arredondamento de todos os cantos.
+      <p>Pode também arredondar 2 cantos diferentes dos outros 2 cantos: </p>
+      <li> arredondamento do canto superior esquerdo e inferior direito.
+      <li> arredondamento do canto superior direito e inferior esquerdo.
+    </ol>
   </main>
   
   <script>
