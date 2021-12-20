@@ -3,7 +3,7 @@
 :root{
 	--bg-color0: #F1D8C9;
 	--bg-color1: white;
-	--bg-color2: rgba(56, 142, 255, 0.9);
+	--bg-color2: rgba(56, 142, 255, 0.95);
 	--bg-color3: rgba(0, 0, 0, 0.3);
 	--border-color0: black;
 	--color-font0: #F39209;
@@ -111,6 +111,7 @@ nav ul li ul{
 	list-style:none;
 	position:absolute;
 	display: none;
+	z-index: 5;
 }
 nav ul li:hover ul{
 	display: block;
