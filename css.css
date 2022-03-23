@@ -25,12 +25,12 @@
 }
 
 body {
-	/*Dimensão da esquerda para a direita é 1360px*/
 	background-color: var(--bg-color0);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	height: 100vh;
 }
 
 div {
